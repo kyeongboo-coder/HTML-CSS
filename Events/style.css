@@ -1,0 +1,292 @@
+/* reset */
+
+body,
+p,
+ul {
+  margin: initial;
+  padding: initial;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: initial;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+button {
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.l_wrapper {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section_purple {
+  background-color: #673399;
+  color: white;
+}
+
+.section_pink {
+  background-color: seashell;
+  color: salmon;
+}
+
+.section-header {
+  margin-bottom: 100px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title-headings {
+  flex-basis: 26%;
+  flex-shrink: 0;
+  font-size: 40px;
+}
+
+.title-headings strong {
+  box-shadow: inset 0 -20px 0 orangered;
+}
+
+.title p {
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  line-height: 25px;
+}
+
+.title p::before {
+  content: " ";
+  width: 60px;
+  height: 2px;
+  flex-shrink: 0;
+  background-color: currentColor;
+  margin-right: 20px;
+}
+
+.card {
+  background-color: white;
+  color: #222;
+  margin-bottom: 24px;
+  display: flex;
+  min-height: 200px;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.card-cover {
+  flex-basis: 26%;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.card-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-cover h2 {
+  position: absolute;
+  background-color: rgb(0 0 0 / 0.4);
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+}
+
+.card-contents {
+  flex-basis: 0;
+  flex-grow: 1;
+  min-width: 0;
+  padding: 30px;
+}
+
+.lists li {
+  text-indent: -20px;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.lists li + li {
+  margin-top: 13px;
+}
+
+.lists li::before {
+  content: " ";
+  background-color: #bd8fe8;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* section_pink */
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  align-items: center;
+}
+
+.title-pink-headings {
+  font-size: 40px;
+}
+
+button {
+  background-color: orangered;
+  color: #fff;
+  flex-shrink: 0;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 rgb(168, 45, 0);
+}
+
+.section-pink-contents {
+  display: flex;
+  gap: 24px;
+}
+
+.event-tool {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 345px;
+  background-color: #fff;
+  box-shadow: 1px 1px 8px 0 #ccc;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.event-contents {
+  padding: 24px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+}
+
+.language span {
+  background: #f1e0f8;
+  color: #673399;
+}
+
+.language span {
+  display: inline-block;
+  color: #673399;
+  margin-top: 24px;
+  padding: 5px;
+  margin-bottom: 24px;
+  border-radius: 4px;
+}
+
+.event-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.event-img {
+  border-bottom: 4px solid #000;
+}
+
+.event-contents2 {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.event-situation {
+  display: flex;
+  height: 68px;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 5px solid #eee;
+  margin-right: -24px;
+  flex-grow: 0;
+}
+
+.soldout span {
+  font-size: 12px;
+  color: gray;
+}
+
+.people {
+  margin-right: 20px;
+}
+
+a {
+  font-size: 12px;
+  color: gray;
+  font-weight: bold;
+}
+
+.people img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+.people img + img {
+  margin-left: -15px;
+}
+
+.event-title2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 24px;
+  flex-grow: 2;
+  flex-shrink: 2;
+}
